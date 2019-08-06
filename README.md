@@ -1,2 +1,8 @@
 # Fspx2019
-Fyysikkospeksin nettisivut
+Web page of the physicist spex.
+
+##
+Compile sass to css with
+```
+sass --watch sass/fspx.scss css/fspx.css
+```
