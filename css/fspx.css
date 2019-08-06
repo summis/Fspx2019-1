@@ -1,0 +1,169 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.header-background-image {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../img/efterrättisulkeiset.jpg");
+  height: 35vw;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-contents {
+  top: 20%;
+  position: relative;
+  color: #f8f8f8;
+}
+.header-contents h1, .header-contents h2, .header-contents p {
+  text-align: center;
+}
+
+.production {
+  background-color: #161d21;
+  color: #f8f8f8;
+  padding: 3rem;
+}
+.production .production-header {
+  text-align: center;
+}
+.production h3 {
+  color: #6ea4c8;
+}
+
+.partners {
+  background-color: #272f34;
+  color: #f8f8f8;
+}
+.partners h2 {
+  color: #546771;
+}
+
+.middle-image {
+  background-image: url("../img/heitästrobovoltti.jpg");
+  height: 35vw;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.general {
+  background-color: #272f34;
+  color: #f8f8f8;
+  padding: 3rem;
+}
+
+.old-spexes {
+  background-color: #161d21;
+  color: #6ea4c8;
+}
+.old-spexes h2 {
+  text-align: center;
+}
+
+.footer {
+  background-color: #546771;
+  color: #f8f8f8;
+}
+.footer h2 {
+  text-align: center;
+}
+
+.fk-contacts, .some-contacts, .email-contacts {
+  padding: 3rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.production-container {
+  grid-area: production;
+}
+
+.partners {
+  grid-area: partners;
+}
+
+.diskoaateliset {
+  grid-area: image;
+}
+
+.general-container {
+  grid-area: general;
+}
+
+.old-spexes {
+  grid-area: old-spexes;
+}
+
+.footer-container {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header" "production production production" "production production production" "partners partners partners" "image image image" "general general general" "old-spexes old-spexes old-spexes" "footer footer footer" "footer footer footer";
+}
+
+.production-header {
+  grid-area: production-header;
+}
+
+.production-story {
+  grid-area: story;
+}
+
+.production-shows {
+  grid-area: shows;
+}
+
+.production-container {
+  display: grid;
+  grid-template-areas: "production-header production-header production-header" "shows story story";
+}
+
+.general-info {
+  grid-area: info;
+}
+
+.general-info-circle {
+  grid-area: circle;
+}
+
+.general-container {
+  display: grid;
+  grid-template-areas: "info info circle";
+}
+
+.footer-header {
+  grid-area: footer-header;
+}
+
+.some-contacts {
+  grid-area: some;
+}
+
+.email-contacts {
+  grid-area: email;
+}
+
+.fk-contacts {
+  grid-area: fk;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-areas: "footer-header footer-header footer-header" "some email fk";
+}
+
+/*# sourceMappingURL=fspx.css.map */

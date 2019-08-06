@@ -1,0 +1,168 @@
+// Palette
+$light-blue: #6ea4c8;
+$dark-blue: #1e6680;
+$white: #f8f8f8;
+$grey: #161d21;
+$light-grey: #272f34;
+$lighter-grey: #404e56;
+$lightest-grey: #546771;
+
+// Fonts
+
+
+// Styles
+body {
+  margin: 0px;
+}
+
+p {
+  font-size: 12px;
+}
+
+
+.header-background-image {
+  margin: 0px;
+  padding: 0px;
+  background-image: url('../img/efterrättisulkeiset.jpg');
+  height: 35vw; 
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-contents {
+  top: 20%;
+  position: relative;
+  color: $white;
+
+  h1, h2, p {
+    text-align: center;
+  }
+}
+
+
+
+.production {
+  background-color: $grey;
+  color: $white;
+  padding: 3rem;
+
+  .production-header {
+    text-align: center;
+  }
+
+  h3 {
+    color: $light-blue;
+  }
+}
+
+.partners {
+  background-color: $light-grey;
+  color: $white;
+
+  h2 {
+    color: $lightest-grey;
+  }
+}
+
+.middle-image { 
+  // Path relative to css-file
+  background-image: url('../img/heitästrobovoltti.jpg');
+  height: 35vw; 
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.general {
+  background-color: $light-grey;
+  color: $white;
+  padding: 3rem
+}
+
+.old-spexes {
+  background-color: $grey;
+  color: $light-blue;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.footer {
+  background-color: $lightest-grey;
+  color: $white;
+  
+  h2 {
+    text-align: center;
+  }
+}
+
+.fk-contacts, .some-contacts, .email-contacts {
+  padding: 3rem;
+}
+
+
+
+
+// Layout
+.header { grid-area: header; }
+.production-container { grid-area: production; }
+.partners { grid-area: partners; }
+.diskoaateliset { grid-area: image; }
+.general-container { grid-area: general; }
+.old-spexes { grid-area: old-spexes; }
+.footer-container { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'production production production'
+    'production production production'
+    'partners partners partners'
+    'image image image'
+    'general general general'
+    'old-spexes old-spexes old-spexes'
+    'footer footer footer'
+    'footer footer footer'
+}
+
+
+.production-header { grid-area: production-header; }
+.production-story { grid-area: story; }
+.production-shows { grid-area: shows; }
+
+.production-container {
+  display: grid;
+  grid-template-areas:
+    'production-header production-header production-header'
+    'shows story story'
+}
+
+
+.general-info { grid-area: info }
+.general-info-circle { grid-area: circle }
+
+.general-container {
+  display: grid;
+  grid-template-areas: 
+    'info info circle'
+}
+
+
+.footer-header { grid-area: footer-header }
+.some-contacts { grid-area: some; }
+.email-contacts { grid-area: email; }
+.fk-contacts { grid-area: fk; }
+
+.footer-container {
+  display: grid;
+  grid-template-areas:
+    'footer-header footer-header footer-header'
+    'some email fk'
+}
+
