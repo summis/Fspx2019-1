@@ -80,7 +80,26 @@ p {
 .general {
   background-color: $light-grey;
   color: $white;
-  padding: 3rem
+  padding: 5rem;
+}
+
+.circle {
+  background: $lightest-grey;
+  border-radius: 50%;
+  color: #fff;
+  height: 0;
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+.circle-text {
+  float: left;
+  line-height: 1;
+  margin-top: -3.5rem;
+  padding-top: 50%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
 }
 
 .old-spexes {
@@ -145,7 +164,7 @@ p {
 
 
 .general-info { grid-area: info }
-.general-info-circle { grid-area: circle }
+.circle { grid-area: circle }
 
 .general-container {
   display: grid;
