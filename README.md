@@ -1,8 +1,5 @@
 # Fspx2019
 Web page of the physicist spex.
 
-##
-Compile sass to css with
-```
-sass --watch sass/fspx.scss css/fspx.css
-```
+## Developing
+Browser-sync and gulp are used in development. Run `npm install` and then `gulp watch`.
