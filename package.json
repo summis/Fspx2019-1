@@ -1,0 +1,24 @@
+{
+  "name": "fspx2019",
+  "version": "1.0.0",
+  "description": "Tools to make developing a bit more easy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/summis/Fspx2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/summis/Fspx2019/issues"
+  },
+  "homepage": "https://github.com/summis/Fspx2019#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
