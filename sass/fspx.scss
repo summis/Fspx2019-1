@@ -1,6 +1,6 @@
 // Palette
-$light-blue: #6ea4c8;
 $dark-blue: #1e6680;
+$light-blue: #6ea4c8;
 $white: #f8f8f8;
 $grey: #161d21;
 $light-grey: #272f34;
@@ -8,6 +8,9 @@ $lighter-grey: #404e56;
 $lightest-grey: #546771;
 
 // Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+$font-sans-serif: 'Nunito', sans-serif;
+
 
 
 // Styles
@@ -16,9 +19,9 @@ body {
 }
 
 p {
-  font-size: 12px;
+  font-size: 19px;
+  font-family: $font-sans-serif;
 }
-
 
 .header-background-image {
   margin: 0px;
@@ -41,8 +44,6 @@ p {
   }
 }
 
-
-
 .production {
   background-color: $grey;
   color: $white;
@@ -64,6 +65,22 @@ p {
   h2 {
     color: $lightest-grey;
   }
+
+  padding: 3rem;
+}
+
+.partner-image {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-partner-image {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .middle-image { 
@@ -76,11 +93,18 @@ p {
   background-size: cover;
 }
 
-
 .general {
   background-color: $light-grey;
   color: $white;
   padding: 5rem;
+}
+
+.lafkat {
+  text-align: left;
+}
+
+.circle-container {
+  padding-left: 20%;
 }
 
 .circle {
@@ -88,8 +112,8 @@ p {
   border-radius: 50%;
   color: #fff;
   height: 0;
-  padding-bottom: 100%;
-  width: 100%;
+  padding-bottom: 350px;
+  width: 350px;
 }
 
 .circle-text {
@@ -125,8 +149,6 @@ p {
 }
 
 
-
-
 // Layout
 .header { grid-area: header; }
 .production-container { grid-area: production; }
@@ -136,18 +158,21 @@ p {
 .old-spexes { grid-area: old-spexes; }
 .footer-container { grid-area: footer; }
 
+.general-info { grid-area: info; }
+.circle-container { grid-area: circle; }
+
+
+// TODO consider adding all positioning to same grid template
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header'
-    'production production production'
-    'production production production'
-    'partners partners partners'
-    'image image image'
-    'general general general'
-    'old-spexes old-spexes old-spexes'
-    'footer footer footer'
-    'footer footer footer'
+    'header header header header header header'
+    'production production production production production production'
+    'partners partners partners partners partners partners'
+    'image image image image image image'
+    'general general general general general general'
+    'old-spexes old-spexes old-spexes old-spexes old-spexes old-spexes'
+    'footer footer footer footer footer footer'
 }
 
 
@@ -158,20 +183,44 @@ p {
 .production-container {
   display: grid;
   grid-template-areas:
-    'production-header production-header production-header'
-    'shows story story'
+    'production-header production-header production-header production-header production-header production-header'
+    'shows shows shows story story story'
 }
 
+.partners-header { grid-area: partners-header; }
+.main-partners-header { grid-area: main-partners-header; }
+.lafkat-header { grid-area: lafkat-header; }
+.reddal { grid-area: reddal; }
+.vtt { grid-area: vtt; }
+.aw { grid-area: aw; }
+.ideastructura { grid-area: ideastructura; }
+.unisport { grid-area: unisport; }
+.espoo { grid-area: espoo; }
+.kulttuuriespoo { grid-area: kulttuuriespoo; }
+.lafkat { grid-area: lafkat; }
 
-.general-info { grid-area: info }
-.circle { grid-area: circle }
+.partners {
+  display: grid;
+  grid-template-areas:
+  'main-partners-header main-partners-header main-partners-header main-partners-header main-partners-header main-partners-header'
+  'reddal reddal reddal vtt vtt vtt'
+  'partners-header partners-header partners-header partners-header partners-header partners-header'
+  'aw aw ideastructura ideastructura unisport unisport'
+  'espoo espoo kulttuuriespoo kulttuuriespoo . .'
+  'lafkat-header lafkat-header lafkat-header lafkat-header lafkat-header lafkat-header'
+  'lafkat lafkat lafkat lafkat lafkat lafkat'
+}
+
+.general-info { grid-area: info; }
+.circle-container { grid-area: circle; }
+
 
 .general-container {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas: 
-    'info info circle'
+    '. info info circle circle .'
 }
-
 
 .footer-header { grid-area: footer-header }
 .some-contacts { grid-area: some; }
@@ -181,7 +230,7 @@ p {
 .footer-container {
   display: grid;
   grid-template-areas:
-    'footer-header footer-header footer-header'
-    'some email fk'
+    'footer-header footer-header footer-header footer-header footer-header footer-header'
+    '. some email email fk .'
 }
 

@@ -1,11 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 body {
-  margin: 0px;
-}
+  margin: 0px; }
 
 p {
-  font-size: 12px;
-}
+  font-size: 19px;
+  font-family: "Nunito", sans-serif; }
 
 .header-background-image {
   margin: 0px;
@@ -15,37 +15,42 @@ p {
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .header-contents {
   top: 20%;
   position: relative;
-  color: #f8f8f8;
-}
-.header-contents h1, .header-contents h2, .header-contents p {
-  text-align: center;
-}
+  color: #f8f8f8; }
+  .header-contents h1, .header-contents h2, .header-contents p {
+    text-align: center; }
 
 .production {
   background-color: #161d21;
   color: #f8f8f8;
-  padding: 3rem;
-}
-.production .production-header {
-  text-align: center;
-}
-.production h3 {
-  color: #6ea4c8;
-}
+  padding: 3rem; }
+  .production .production-header {
+    text-align: center; }
+  .production h3 {
+    color: #6ea4c8; }
 
 .partners {
   background-color: #272f34;
   color: #f8f8f8;
-}
-.partners h2 {
-  color: #546771;
-}
+  padding: 3rem; }
+  .partners h2 {
+    color: #546771; }
+
+.partner-image {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main-partner-image {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .middle-image {
   background-image: url("../img/heitästrobovoltti.jpg");
@@ -53,23 +58,26 @@ p {
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .general {
   background-color: #272f34;
   color: #f8f8f8;
-  padding: 5rem;
-}
+  padding: 5rem; }
+
+.lafkat {
+  text-align: left; }
+
+.circle-container {
+  padding-left: 20%; }
 
 .circle {
   background: #546771;
   border-radius: 50%;
   color: #fff;
   height: 0;
-  padding-bottom: 100%;
-  width: 100%;
-}
+  padding-bottom: 350px;
+  width: 350px; }
 
 .circle-text {
   float: left;
@@ -78,111 +86,127 @@ p {
   padding-top: 50%;
   padding-left: 2rem;
   padding-right: 2rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .old-spexes {
   background-color: #161d21;
-  color: #6ea4c8;
-}
-.old-spexes h2 {
-  text-align: center;
-}
+  color: #6ea4c8; }
+  .old-spexes h2 {
+    text-align: center; }
 
 .footer {
   background-color: #546771;
-  color: #f8f8f8;
-}
-.footer h2 {
-  text-align: center;
-}
+  color: #f8f8f8; }
+  .footer h2 {
+    text-align: center; }
 
 .fk-contacts, .some-contacts, .email-contacts {
-  padding: 3rem;
-}
+  padding: 3rem; }
 
 .header {
-  grid-area: header;
-}
+  grid-area: header; }
 
 .production-container {
-  grid-area: production;
-}
+  grid-area: production; }
 
 .partners {
-  grid-area: partners;
-}
+  grid-area: partners; }
 
 .diskoaateliset {
-  grid-area: image;
-}
+  grid-area: image; }
 
 .general-container {
-  grid-area: general;
-}
+  grid-area: general; }
 
 .old-spexes {
-  grid-area: old-spexes;
-}
+  grid-area: old-spexes; }
 
 .footer-container {
-  grid-area: footer;
-}
+  grid-area: footer; }
+
+.general-info {
+  grid-area: info; }
+
+.circle-container {
+  grid-area: circle; }
 
 .grid-container {
   display: grid;
-  grid-template-areas: "header header header" "production production production" "production production production" "partners partners partners" "image image image" "general general general" "old-spexes old-spexes old-spexes" "footer footer footer" "footer footer footer";
-}
+  grid-template-areas: 'header header header header header header' 'production production production production production production' 'partners partners partners partners partners partners' 'image image image image image image' 'general general general general general general' 'old-spexes old-spexes old-spexes old-spexes old-spexes old-spexes' 'footer footer footer footer footer footer'; }
 
 .production-header {
-  grid-area: production-header;
-}
+  grid-area: production-header; }
 
 .production-story {
-  grid-area: story;
-}
+  grid-area: story; }
 
 .production-shows {
-  grid-area: shows;
-}
+  grid-area: shows; }
 
 .production-container {
   display: grid;
-  grid-template-areas: "production-header production-header production-header" "shows story story";
-}
+  grid-template-areas: 'production-header production-header production-header production-header production-header production-header' 'shows shows shows story story story'; }
+
+.partners-header {
+  grid-area: partners-header; }
+
+.main-partners-header {
+  grid-area: main-partners-header; }
+
+.lafkat-header {
+  grid-area: lafkat-header; }
+
+.reddal {
+  grid-area: reddal; }
+
+.vtt {
+  grid-area: vtt; }
+
+.aw {
+  grid-area: aw; }
+
+.ideastructura {
+  grid-area: ideastructura; }
+
+.unisport {
+  grid-area: unisport; }
+
+.espoo {
+  grid-area: espoo; }
+
+.kulttuuriespoo {
+  grid-area: kulttuuriespoo; }
+
+.lafkat {
+  grid-area: lafkat; }
+
+.partners {
+  display: grid;
+  grid-template-areas: 'main-partners-header main-partners-header main-partners-header main-partners-header main-partners-header main-partners-header' 'reddal reddal reddal vtt vtt vtt' 'partners-header partners-header partners-header partners-header partners-header partners-header' 'aw aw ideastructura ideastructura unisport unisport' 'espoo espoo kulttuuriespoo kulttuuriespoo . .' 'lafkat-header lafkat-header lafkat-header lafkat-header lafkat-header lafkat-header' 'lafkat lafkat lafkat lafkat lafkat lafkat'; }
 
 .general-info {
-  grid-area: info;
-}
+  grid-area: info; }
 
-.circle {
-  grid-area: circle;
-}
+.circle-container {
+  grid-area: circle; }
 
 .general-container {
   display: grid;
-  grid-template-areas: "info info circle";
-}
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: '. info info circle circle .'; }
 
 .footer-header {
-  grid-area: footer-header;
-}
+  grid-area: footer-header; }
 
 .some-contacts {
-  grid-area: some;
-}
+  grid-area: some; }
 
 .email-contacts {
-  grid-area: email;
-}
+  grid-area: email; }
 
 .fk-contacts {
-  grid-area: fk;
-}
+  grid-area: fk; }
 
 .footer-container {
   display: grid;
-  grid-template-areas: "footer-header footer-header footer-header" "some email fk";
-}
-
-/*# sourceMappingURL=fspx.css.map */
+  grid-template-areas: 'footer-header footer-header footer-header footer-header footer-header footer-header' '. some email email fk .'; }

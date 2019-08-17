@@ -4,6 +4,7 @@
     <link rel='stylesheet' type='text/css' href='./css/fspx.css'>
 </head>
 <body class="grid-container">
+
   <!-- Front page: big background image and navigation buttons and ticket shop button -->
   <div class="header header-background-image">
     <div class="header-contents">
@@ -20,6 +21,7 @@
       <span>Tarina kaljasta ja veneistä ja kaikesta</span>
     </div>
     <aside class="production-shows">
+      <!-- Tähän yleistietopaketti näytöksistä -->
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, at sint ducimus reiciendis est illum nobis corporis earum amet placeat maxime aliquam adipisci voluptas suscipit esse numquam? Obcaecati, deserunt veritatis.</p>
     </aside>
     <article class="production-story">
@@ -31,31 +33,54 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque qui nisi earum vel est quia quis quibusdam assumenda esse eaque debitis, fugiat asperiores dolor culpa odio maiores fugit reiciendis sequi!
       </p>
     </article>
+    <!-- Tähän sellaset osta lippu buttonit -->
   </section>
-
+  
+  <!-- TODO: adjust VTT logo smaller now it is rather massive;
+     align bottom row such that that they all start from the same line;
+     sharper reddal logo; 
+     crop espoo logos better; -->
   <!-- Are for showing sponsors of the spex -->
   <section class="partners">
-    <h2>Speksiä mahdollistamassa</h2>
+    <h2 class="-main-partners-header">Pääyhteistyökumppanit</h2>
+    <div class="reddal"><img class="main-partner-image" src="img/partners/reddal.png" alt="REDDAL"></div>
+    <div class="vtt"><img class="main-partner-image" src="img/partners/vtt.png" alt="VTT"></div>
+
+    <h2 class="partners-header">Speksiä mahdollistamassa</h2>
+    <div class="aw"><img class="partner-image" src="img/partners/aw.png" alt="Academic Work"></div>
+    <div class="ideastructura"><img class="partner-image" src="img/partners/ideastructura.png" alt="IdeaStructura"></div>
+    <div class="unisport"><img class="partner-image" src="img/partners/unisport.png" alt="Unisport"></div>
+    <div class="espoo"><img class="partner-image" src="img/partners/EspooWhite.png" alt="Espoon kaupunki"></div>
+    <div class="kulttuuriespoo"><img class="partner-image" src="img/partners/kulttuuriespoo.png" alt="Kulttuuriespoo"></div>
+
+    <h2 class="lafkat-header">Kiitos!</h2>
+    <div class="lafkat">
+      <h3>Aaltoyliopiston matematiikan ja systeemianalyysin laitos</h3>
+      <h3>Aaltoyliopiston teknillisen fysiikan laitos</h3>
+      <h3>Aaltoyliopiston neurotieteen ja lääketieteellisen tekniikan laitos</h3>
+    </div>
   </section>
 
   <!-- Area for image -->
   <div class="middle-image"></div>
   
   <!-- Area where information about spex in general is told -->
-  <section class="general general-container">
+  <div class="general general-container">
     <section class="general-info">
       <h2>Speksistä yleisesti</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis accusamus!</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis accusamus!</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis accusamus!</p>
     </section>
-    <aside class="circle">
-      <div class="circle-text">
-        <h2>Tiesitkö</h2>
-        <p>Fyysikkospeksiä 2017 oli tekemässä yli 100 opiskelijaa 10 eri opintoalalta.</p>
+    <section class="circle-container">
+      <div class="circle">
+        <div class="circle-text">
+          <h2>Tiesitkö</h2>
+          <p>Fyysikkospeksiä 2017 oli tekemässä yli 100 opiskelijaa 10 eri opintoalalta.</p>
+        </div>
       </div>
-    </aside>
-  </section>
+    </section>
+  </div>
 
   <!-- Area where old spexes are introduced -->
   <section class="old-spexes">
@@ -88,4 +113,5 @@
       <p>Y-tunnus: 1903417-1</p>
     </section>
   </footer>
+
 </body>
