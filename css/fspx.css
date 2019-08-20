@@ -1,7 +1,27 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@font-face {
+  font-family: 'BRLNSR';
+  src: url("./../fonts/BRLNSR.eot");
+  src: local("BRLNSR"), url("./../fonts/BRLNSR.woff") format("woff"), url("./../fonts/BRLNSR.ttf") format("truetype"); }
+
 body {
   margin: 0px; }
+
+h1 {
+  font-size: 90px;
+  font-family: BRLNSR;
+  font-weight: normal; }
+
+h2 {
+  font-size: 37px;
+  font-family: BRLNSR;
+  font-weight: normal; }
+
+h3 {
+  font-size: 27px;
+  font-family: BRLNSR;
+  font-weight: normal; }
 
 p {
   font-size: 19px;
@@ -21,8 +41,15 @@ p {
   top: 20%;
   position: relative;
   color: #f8f8f8; }
-  .header-contents h1, .header-contents h2, .header-contents p {
-    text-align: center; }
+  .header-contents h1, .header-contents h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.1rem; }
+  .header-contents p {
+    text-align: center;
+    margin-top: 0.1rem;
+    font-size: 40px;
+    font-family: BRLNSR; }
 
 .production {
   background-color: #161d21;
@@ -41,13 +68,13 @@ p {
     color: #546771; }
 
 .partner-image {
-  width: 500px;
+  width: 25vw;
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
 .main-partner-image {
-  height: 200px;
+  height: 10vw;
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -82,7 +109,7 @@ p {
 .circle-text {
   float: left;
   line-height: 1;
-  margin-top: -3.5rem;
+  margin-top: -5.5rem;
   padding-top: 50%;
   padding-left: 2rem;
   padding-right: 2rem;
