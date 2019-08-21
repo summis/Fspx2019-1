@@ -1,116 +1,351 @@
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' type='text/css' href='./css/fspx.css'>
-</head>
-<body class="grid-container">
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link rel="stylesheet" type="text/css" href="./css/fspx.css" />
 
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   <script src="https://unpkg.com/feather-icons"></script>
+  <title>Fyysikkospeksi</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img
+        src="img/speksilogo.png"
+        class="speksi-logo"
+        alt="Fyysikkospeksi logo"
+      />
+      Fyysikkospeksi
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample04">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#production">Speksi 2019</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#buy-tickets">Osta liput</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Mikä speksi?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Historia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Yhteystiedot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">In English</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    
+  <div class="grid-container">
   <!-- Front page: big background image and navigation buttons and ticket shop button -->
   <div class="header header-background-image">
+    <div class="overlay"></div>
     <div class="header-contents">
-      <h2>Fyysikkospeksi 2019</h2>
+      <h2>Fyysikkospeksi esittää</h2>
       <h1>Suo anteeksi</h1>
-      <p class="dates">17.-21.10.2019</p>
+      <h3 class="dates">17.-21.10.2019</h3>
+
+      <br />
+      <br />
+      <a href="#production" class="button-outline">Lue lisää</a>
+      <a href="#buy-tickets" id="production" class="button-solid">Osta lippu</a>
     </div>
   </div>
 
   <!-- Area for showing details about current production: schedule, short text, ticket prices -->
-  <section class="production production-container">
+  <div class="production-container">
     <div class="production-header">
       <h2>Fyysikkospeksi 2019</h2>
-      <span>Tarina kaljasta ja veneistä ja kaikesta</span>
+      <span class="muted-text">Tarina kaljasta ja veneistä ja kaikesta</span>
     </div>
-    <aside class="production-shows">
+    <div class="production-shows">
       <!-- Tähän yleistietopaketti näytöksistä -->
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, at sint ducimus reiciendis est illum nobis corporis earum amet placeat maxime aliquam adipisci voluptas suscipit esse numquam? Obcaecati, deserunt veritatis.</p>
-    </aside>
-    <article class="production-story">
-      <h3>Suo anteeksi</h3>
+      <table>
+        <tr>
+          <td>
+            <i data-feather="map-pin" class="icon"></i>
+            <span>Esityspaikka</span>
+          </td>
+          <td>
+            Louhisali
+            <br />
+            <span class="muted-text">Kulttuuriaukio 2, 02100 Espoo</span>
+            <br /><br />
+            Dipoli (en)
+            <br />
+            <span class="muted-text">Otakaari 24, 02150 Espoo</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i data-feather="tag" class="icon"></i>
+            <span>Liput</span>
+          </td>
+          <td class="list">
+            Opiskelija 15 €
+            <br />
+            Aikuinen 23 €
+            <br />
+            Kannatuslippu 40 €
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i data-feather="clock" class="icon"></i>
+            <span>Kesto</span>
+          </td>
+          <td>
+            Noin kolme tuntia
+            <br />
+            <span class="muted-text">sis. väliajan 30min</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i data-feather="calendar" class="icon"></i>
+            <span>Esitysajat</span>
+          </td>
+          <td class="list">
+            17.10. klo 18.00
+            <br />
+            18.10. klo 18.00
+            <br />
+            19.10. klo 18.00
+            <br />
+            20.10. klo 18.00
+            <br />
+            21.10. klo 18.00
+            <br /><br />
+            19.11. klo 18.00 (en)
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="buy-tickets" class="production-story">
+      <h3 class="uppercase">Suo anteeksi</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid asperiores vitae ipsam, eius cupiditate quod harum quae debitis illum veniam, cumque dolores doloremque ex ipsa aspernatur laboriosam. Sit, tempora reiciendis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+        asperiores vitae ipsam, eius cupiditate quod harum quae debitis illum
+        veniam, cumque dolores doloremque ex ipsa aspernatur laboriosam. Sit,
+        tempora reiciendis!
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque qui nisi earum vel est quia quis quibusdam assumenda esse eaque debitis, fugiat asperiores dolor culpa odio maiores fugit reiciendis sequi!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque qui nisi
+        earum vel est quia quis quibusdam assumenda esse eaque debitis, fugiat
+        asperiores dolor culpa odio maiores fugit reiciendis sequi!
       </p>
-    </article>
+      <table>
+        <tr>
+          <th colspan="4">
+            Osta liput
+          </th>
+        </tr>
+        <tr>
+          <td>Torstai</td>
+          <td>17.10.</td>
+          <td>klo 18.00</td>
+          <td><a class="buy-button" href="#">Osta lippu</a></td>
+        </tr>
+        <tr>
+          <td>Perjantai</td>
+          <td>18.10.</td>
+          <td>klo 18.00</td>
+          <td><a class="buy-button" href="#">Osta lippu</a></td>
+        </tr>
+        <tr>
+          <td>Lauantai</td>
+          <td>19.10.</td>
+          <td>klo 18.00</td>
+          <td><a class="buy-button" href="#">Osta lippu</a></td>
+        </tr>
+        <tr>
+          <td>Sunnuntai</td>
+          <td>20.10.</td>
+          <td>klo 18.00</td>
+          <td><a class="buy-button" href="#">Osta lippu</a></td>
+        </tr>
+        <tr>
+          <td>Maanantai</td>
+          <td>21.10.</td>
+          <td>klo 18.00</td>
+          <td><a class="buy-button" href="#">Osta lippu</a></td>
+        </tr>
+        <tr>
+          <td>Tiistai (en)</td>
+          <td>19.11..</td>
+          <td>klo 18.00</td>
+          <td><a class="buy-button" href="#">Osta lippu</a></td>
+        </tr>
+      </table>
+    </div>
     <!-- Tähän sellaset osta lippu buttonit -->
-  </section>
-  
+  </div>
+
   <!-- TODO:
      align bottom row such that that they all start from the same line;
      crop espoo logos better; -->
   <!-- Area for showing sponsors of the spex -->
-  <section class="partners">
-    <h2 class="-main-partners-header">Pääyhteistyökumppanit</h2>
-    <div class="reddal"><img class="main-partner-image" src="img/partners/reddal.png" alt="REDDAL"></div>
-    <div class="vtt"><img class="main-partner-image" src="img/partners/vtt.png" alt="VTT"></div>
-
-    <h2 class="partners-header">Speksiä mahdollistamassa</h2>
-    <div class="aw"><img class="partner-image" src="img/partners/aw.png" alt="Academic Work"></div>
-    <div class="ideastructura"><img class="partner-image" src="img/partners/ideastructura.png" alt="IdeaStructura"></div>
-    <div class="unisport"><img class="partner-image" src="img/partners/unisport.png" alt="Unisport"></div>
-    <div class="espoo"><img class="partner-image" src="img/partners/EspooWhite.png" alt="Espoon kaupunki"></div>
-    <div class="kulttuuriespoo"><img class="partner-image" src="img/partners/kulttuuriespoo.png" alt="Kulttuuriespoo"></div>
-
-    <h2 class="lafkat-header">Kiitos!</h2>
-    <div class="lafkat">
-      <h3>Aaltoyliopiston matematiikan ja systeemianalyysin laitos</h3>
-      <h3>Aaltoyliopiston teknillisen fysiikan laitos</h3>
-      <h3>Aaltoyliopiston neurotieteen ja lääketieteellisen tekniikan laitos</h3>
+  <div class="partners">
+    <h2 class="partner-header">Pääyhteistyökumppanit</h2>
+    <div class="partner-container">
+      <img
+        class="main-partner-image"
+        src="img/partners/reddal.png"
+        alt="REDDAL"
+      />
     </div>
-  </section>
+    <div class="partner-container">
+      <img class="main-partner-image" src="img/partners/vtt.png" alt="VTT" />
+    </div>
+
+    <h2 class="partner-header">Speksiä mahdollistamassa</h2>
+    <div class="partner-container">
+      <img
+      class="partner-image"
+      src="img/partners/aw.png"
+      alt="Academic Work"
+    />
+    </div>
+    <div class="partner-container">
+      <img
+      class="partner-image"
+      src="img/partners/ideastructura.png"
+      alt="IdeaStructura"
+    />
+    </div>
+    <div class="partner-container">
+      <img
+      class="partner-image"
+      src="img/partners/unisport.png"
+      alt="Unisport"
+    />
+    </div>
+    <div class="partner-container">
+      <img
+      class="partner-image"
+      src="img/partners/EspooWhite.png"
+      alt="Espoon kaupunki"
+    />
+    </div>
+    <div class="partner-container">
+      <img
+      class="partner-image"
+      src="img/partners/kulttuuriespoo.png"
+      alt="Kulttuuriespoo"
+    />
+    </div>
+
+    <h2 class="partner-header">Kiitos!</h2>
+    <div class="lafkat">
+      <h3>Aalto-yliopiston matematiikan ja systeemianalyysin laitos</h3>
+      <h3>Aalto-yliopiston teknillisen fysiikan laitos</h3>
+      <h3>Aalto-yliopiston neurotieteen ja lääketieteellisen tekniikan laitos</h3>
+    </div>
+  </div>
 
   <!-- Area for image -->
   <div class="middle-image"></div>
-  
+
   <!-- Area where information about spex in general is told -->
-  <div class="general general-container">
-    <section class="general-info">
+  <div id="about" class="general-container">
+    <div class="general-info">
       <h2>Speksistä yleisesti</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis accusamus!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis accusamus!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis accusamus!</p>
-    </section>
-    <section class="circle-container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia
+        eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia
+        et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis
+        accusamus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia
+        eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia
+        et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis
+        accusamus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia
+        eaque ab? Unde aspernatur ducimus incidunt maxime consequatur neque quia
+        et, molestias aliquam. Possimus dolorem aut soluta praesentium debitis
+        accusamus!
+      </p>
+    </div>
+    <div class="circle-container">
       <div class="circle">
         <div class="circle-text">
           <h2>Tiesitkö</h2>
-          <p>Fyysikkospeksiä 2017 oli tekemässä yli 100 opiskelijaa 10 eri opintoalalta.</p>
+          <p>
+            Fyysikkospeksiä 2017 oli tekemässä yli 100 opiskelijaa 10 eri
+            opintoalalta.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 
   <!-- Area where old spexes are introduced -->
-  <section class="old-spexes">
+  <!-- TODO: tehdään myöhemmin niin saadaan nopeesti liveks -->
+  <!-- <div class="old-spexes">
     <h2>Aiemmat fyysikkospeksit</h2>
-  </section>
-  
-  <!-- Footer area for contacts and stuff -->
-  <footer class="footer footer-container">
-    <h2 class="footer-header">Yhteystiedot</h2>
-    <section class="some-contacts">
-      <h3>Seuraa speksiä somessa!</h3>
-      <p>facebook.com/fyysikkospeksi</p>
-      <p>instagram.com/fyysikkospeksi</p>
-    </section>
-    <section class="email-contacts">
-      <h3>Tuottajat</h3>
-      <p>tuottajat@fyysikkospeksi.fi</p>
-      <h3>Yritykset</h3>
-      <p>yrityssuhteet@fyysikkospeksi.fi</p>
-      <h3>Myynti</h3>
-      <p>myynti@fyysikkospeksi.fi</p>
-    </section>
-    <section class="fk-contacts">
-      <h3>Fyysikkokilta ry</h3>
-      <p>fyysikkokilta.fi <br/>
-      fk@fyysikkokilta.fi</p>
-      <p>AYY / Fyysikkokilta <br/>
-      PL 69 <br/>
-      02150 Espoo</p>
-      <p>Y-tunnus: 1903417-1</p>
-    </section>
-  </footer>
+  </div> -->
 
+  <!-- Footer area for contacts and stuff -->
+  <div class="footer-container">
+    <h2 class="footer-header" id="contact">Yhteystiedot</h2>
+    <div class="footer-column">
+      <h3 class="uppercase">Seuraa speksiä somessa!</h3>
+      <img src="./img/facebook_logo.png" class="fb-logo" />
+      <a href="https://facebook.com/fyysikkospeksi" target="_blank" class="some-link">facebook.com/fyysikkospeksi</a>
+      <br/>
+      <br/>
+      <img src="./img/instagram_logo.png" class="ig-logo" />
+      <a href="https://instagram.com/fyysikkospeksi" target="_blank" class="some-link">instagram.com/fyysikkospeksi</a>
+    </div>
+    <div class="footer-column">
+      <h3 class="uppercase">Tuottajat</h3>
+      <p>tuottajat@fyysikkospeksi.fi</p>
+      <h3 class="uppercase">Yritykset</h3>
+      <p>yrityssuhteet@fyysikkospeksi.fi</p>
+      <h3 class="uppercase">Myynti</h3>
+      <p>myynti@fyysikkospeksi.fi</p>
+    </div>
+    <div class="footer-column">
+      <h3 class="uppercase">Fyysikkokilta ry</h3>
+      <p>
+        fyysikkokilta.fi <br />
+        fk@fyysikkokilta.fi
+      </p>
+      <p>
+        AYY / Fyysikkokilta <br />
+        PL 69 <br />
+        02150 Espoo
+      </p>
+      <p>Y-tunnus: 1903417-1</p>
+    </div>
+  </div>
+  
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="./js/fspx.js"></script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace()
+  </script>
 </body>
