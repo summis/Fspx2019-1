@@ -121,6 +121,10 @@ p {
   .lafkat h3 {
     font-size: 22px; }
 
+.header-button-row {
+  display: flex;
+  justify-content: center; }
+
 .circle {
   background: #637984;
   border-radius: 50%;
@@ -311,6 +315,12 @@ p {
   .some-link:hover {
     color: #6ea4c8; }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden; }
+
 @media screen and (max-width: 992px) {
   .production-shows {
     width: 100% !important; }
@@ -320,8 +330,13 @@ p {
     width: 100% !important; }
   .navbar {
     background: rgba(0, 0, 0, 0.78); }
+  .tickets-table {
+    margin-bottom: 60px; }
   .production-container {
-    padding: 52px 1rem; }
+    padding: 52px 1rem;
+    flex-direction: column-reverse; }
+    .production-container .production-header {
+      display: none; }
   .general-container {
     padding: 52px 2rem; }
   .main-partner-image {
@@ -336,6 +351,10 @@ p {
       font-size: 16px; } }
 
 @media screen and (max-width: 600px) {
+  .tickets-table {
+    font-size: 16px !important; }
+    .tickets-table .weekday-td {
+      width: 30px; }
   .footer-column {
     width: 80%;
     margin: 0 10%; } }

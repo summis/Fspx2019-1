@@ -24,10 +24,10 @@
       />
       Fyysikkospeksi
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarsExample04">
+    <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#production">Fyysikkospeksi 2019</a>
@@ -69,14 +69,17 @@
 
       <br />
       <br />
-      <a href="#production" class="button-outline finnish">Lue lisää</a>
-      <a href="#production" class="button-outline english">Read more</a>
-      <a href="#buy-tickets" id="production" class="button-solid finnish">Osta lippu</a>
-      <a href="#buy-tickets" id="production" class="button-solid english">Buy tickets</a>
+      <div class="header-button-row">
+        <a href="#production" class="button-outline finnish">Lue lisää</a>
+        <a href="#production" class="button-outline english">Read more</a>
+        <a href="#buy-tickets" class="button-solid finnish">Osta lippu</a>
+        <a href="#buy-tickets" class="button-solid english">Buy tickets</a>
+      </div>
     </div>
   </div>
 
   <!-- Area for showing details about current production: schedule, short text, ticket prices -->
+  <a class="anchor" id="production"></a>
   <div class="production-container">
     <div class="production-header">
       <h2>Fyysikkospeksi 2019</h2>
@@ -160,7 +163,7 @@
         </tr>
       </table>
     </div>
-    <div id="buy-tickets" class="production-story">
+    <div class="production-story">
       <h3 class="uppercase finnish">Suo anteeksi</h3>
       <h3 class="uppercase english">Our hopes and expectations</h3>
       <p class="finnish">
@@ -180,7 +183,8 @@
       <p class="finnish">Kannatuslipun ostajille varataan parhaat paikat keskeltä salin etuosasta.</p>
       <p class="english">Buying a patron ticket ensures that you will get the best seats in the whole theatre!</p>
 
-      <table>
+      <a class="anchor" id="buy-tickets"></a>
+      <table class="tickets-table">
         <tr>
           <th colspan="4">
             <span class="finnish">Osta liput</span>
@@ -188,7 +192,7 @@
           </th>
         </tr>
         <tr>
-          <td>
+          <td class="weekday-td">
             <span class="finnish">Torstai</span>
             <span class="english">Thursday</span>
           </td>
@@ -354,7 +358,8 @@
   <div class="middle-image"></div>
 
   <!-- Area where information about spex in general is told -->
-  <div id="about" class="general-container">
+  <a class="anchor" id="about"></a>
+  <div class="general-container">
     <div class="general-info">
       <h2 class="finnish">Speksistä yleisesti</h2>
       <h2 class="english">About spex</h2>
@@ -397,9 +402,10 @@
   </div> -->
 
   <!-- Footer area for contacts and stuff -->
+  <a class="anchor" id="contact"></a>
   <div class="footer-container">
-    <h2 class="footer-header finnish" id="contact">Yhteystiedot</h2>
-    <h2 class="footer-header english" id="contact">Contact</h2>
+    <h2 class="footer-header finnish">Yhteystiedot</h2>
+    <h2 class="footer-header english">Contact</h2>
     <div class="footer-column">
       <h3 class="uppercase finnish">Seuraa speksiä somessa!</h3>
       <h3 class="uppercase english">Follow us on social media!</h3>

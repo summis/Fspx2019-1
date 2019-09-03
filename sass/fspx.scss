@@ -179,6 +179,11 @@ p {
   }
 }
 
+.header-button-row {
+  display: flex;
+  justify-content: center;
+}
+
 .circle {
   background: $lightest-grey;
   border-radius: 50%;
@@ -446,6 +451,13 @@ p {
   }
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+
 // TODO responsive layout
 @media screen and (max-width: 992px) {
   .production-shows {
@@ -464,8 +476,16 @@ p {
     background: rgba(0, 0, 0, 0.78);
   }
 
+  .tickets-table {
+    margin-bottom: 60px;
+  }
+
   .production-container {
     padding: 52px 1rem;
+    flex-direction: column-reverse;
+    .production-header {
+      display: none;
+    }
   }
 
   .general-container {
@@ -496,6 +516,12 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .tickets-table {
+    font-size: 16px !important;
+    .weekday-td {
+      width: 30px;
+    }
+  }
   .footer-column {
     width: 80%;
     margin: 0 10%;

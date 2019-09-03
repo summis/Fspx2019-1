@@ -2,14 +2,16 @@
  * Listen to scroll to change header opacity class
  */
 
+$(document).ready(function() { 
+  $('.english').hide();
+}); 
+
 var startY = $('.navbar').height() * 2;
 
 function checkScroll() {
   if ($(window).scrollTop() > startY) {
-    console.log('scrolled');
     $('.navbar').addClass('scrolled');
   } else {
-    console.log('not scrolled');
     $('.navbar').removeClass('scrolled');
   }
 }
@@ -33,7 +35,3 @@ function inFinnish() {
   $('.english').hide();
   $('.finnish').show();
 }
-
-$(document).ready(function() { 
-  $('.english').hide();
-}); 
