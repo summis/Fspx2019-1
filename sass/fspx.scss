@@ -281,7 +281,7 @@ p {
           padding: 20px 10px 50px 10px;
           vertical-align: top;
 
-          &.list {
+          .list-item {
             line-height: 35px;
           }
         }
@@ -458,8 +458,32 @@ a.anchor {
     visibility: hidden;
 }
 
+.group-ticket {
+  margin-left: -4px;
+}
+
+.desktop-ticket-info {
+  visibility: visible;
+  a {
+    color: $light-blue !important;
+  }
+}
+.mobile-ticket-info {
+  visibility: hidden;
+  a {
+    color: $light-blue !important;
+  }
+}
+
 // TODO responsive layout
 @media screen and (max-width: 992px) {
+  .desktop-ticket-info {
+    visibility: hidden;
+  }
+  .mobile-ticket-info {
+    visibility: visible;
+  }
+  
   .production-shows {
     width: 100% !important;
   }

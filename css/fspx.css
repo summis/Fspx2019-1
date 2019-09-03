@@ -196,7 +196,7 @@ p {
       .production-container .production-shows table tr td {
         padding: 20px 10px 50px 10px;
         vertical-align: top; }
-        .production-container .production-shows table tr td.list {
+        .production-container .production-shows table tr td .list-item {
           line-height: 35px; }
       .production-container .production-shows table tr td:first-child {
         width: 45%;
@@ -321,7 +321,24 @@ a.anchor {
   top: -150px;
   visibility: hidden; }
 
+.group-ticket {
+  margin-left: -4px; }
+
+.desktop-ticket-info {
+  visibility: visible; }
+  .desktop-ticket-info a {
+    color: #6ea4c8 !important; }
+
+.mobile-ticket-info {
+  visibility: hidden; }
+  .mobile-ticket-info a {
+    color: #6ea4c8 !important; }
+
 @media screen and (max-width: 992px) {
+  .desktop-ticket-info {
+    visibility: hidden; }
+  .mobile-ticket-info {
+    visibility: visible; }
   .production-shows {
     width: 100% !important; }
   .production-story {
