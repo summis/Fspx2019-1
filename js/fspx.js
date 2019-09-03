@@ -2,9 +2,9 @@
  * Listen to scroll to change header opacity class
  */
 
-$(document).ready(function() { 
+$(document).ready(function() {
   $('.english').hide();
-}); 
+});
 
 var startY = $('.navbar').height() * 2;
 
