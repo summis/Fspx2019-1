@@ -325,20 +325,20 @@ a.anchor {
   margin-left: -4px; }
 
 .desktop-ticket-info {
-  visibility: visible; }
+  display: block; }
   .desktop-ticket-info a {
     color: #6ea4c8 !important; }
 
 .mobile-ticket-info {
-  visibility: hidden; }
+  display: none; }
   .mobile-ticket-info a {
     color: #6ea4c8 !important; }
 
 @media screen and (max-width: 992px) {
   .desktop-ticket-info {
-    visibility: hidden; }
+    display: none; }
   .mobile-ticket-info {
-    visibility: visible; }
+    display: block; }
   .production-shows {
     width: 100% !important; }
   .production-story {

@@ -463,13 +463,13 @@ a.anchor {
 }
 
 .desktop-ticket-info {
-  visibility: visible;
+  display: block;
   a {
     color: $light-blue !important;
   }
 }
 .mobile-ticket-info {
-  visibility: hidden;
+  display: none;
   a {
     color: $light-blue !important;
   }
@@ -478,10 +478,10 @@ a.anchor {
 // TODO responsive layout
 @media screen and (max-width: 992px) {
   .desktop-ticket-info {
-    visibility: hidden;
+    display: none;
   }
   .mobile-ticket-info {
-    visibility: visible;
+    display: block
   }
   
   .production-shows {
