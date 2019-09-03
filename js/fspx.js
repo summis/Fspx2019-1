@@ -23,3 +23,17 @@ if ($('.navbar').length > 0) {
 $('.navbar-nav>li>a').on('click', function() {
   $('.navbar-collapse').collapse('hide');
 });
+
+function inEnglish() {
+  $('.finnish').hide();
+  $('.english').show();
+}
+
+function inFinnish() {
+  $('.english').hide();
+  $('.finnish').show();
+}
+
+$(document).ready(function() { 
+  $('.english').hide();
+}); 

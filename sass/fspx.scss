@@ -6,7 +6,7 @@ $white: #f8f8f8;
 $grey: #161d21;
 $light-grey: #272f34;
 $lighter-grey: #404e56;
-$lightest-grey: #546771;
+$lightest-grey: #637984;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
@@ -55,6 +55,10 @@ h3 {
   }
 }
 
+a {
+  color: $white !important;
+}
+
 p {
   font-size: 19px;
   font-family: $font-sans-serif;
@@ -65,17 +69,28 @@ p {
   margin: 0px;
   padding: 0px;
   background-image: url('../img/efterrättisulkeiset.jpg');
+  // filter: brightness(50%);
   height: 35vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+// .header-background-image::before {
+//   content: "";
+//   position: absolute;
+//   height: 35vw;
+//   top: 0; left: 0;
+//   width: 100%; height: 100%;
+//   background-image: url('../img/efterrättisulkeiset.jpg');
+//   filter: brightness(50%);
+// }
 
 .overlay {
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
   min-height: 600px;
+  height: 35vw;
 }
 
 .header-contents {
@@ -174,13 +189,11 @@ p {
 }
 
 .circle-text {
-  float: left;
-  line-height: 1;
-  margin-top: -5.5rem;
-  padding-top: 50%;
-  padding-left: 2rem;
-  padding-right: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 22%;
+  padding: 30px;
 }
 
 .circle-container {
@@ -204,6 +217,10 @@ p {
   background-color: $lightest-grey;
   color: $white;
   padding: 40px 0;
+
+  a {
+    margin-bottom: 20px;
+  }
 
   .footer-header {
     width: 100%;
@@ -234,7 +251,7 @@ p {
   justify-content: space-between;
   background-color: $grey;
   color: $white;
-  padding: 72px 3rem;
+  padding: 72px 10%;
 
   h3 {
     color: $light-blue;
@@ -281,6 +298,12 @@ p {
 
   .production-story {
     width: 49%;
+
+    p {
+      a {
+        color: $light-blue !important;
+      }
+    }
 
     table {
       margin-top: 70px;
@@ -357,7 +380,7 @@ p {
 }
 
 .muted-text {
-  color: $lightest-grey;
+  color: $lightest-grey !important;
   font-size: 20px;
   font-family: $font-sans-serif;
   font-style: italic;

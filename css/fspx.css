@@ -31,6 +31,9 @@ h3 {
     font-size: 20px;
     font-weight: 600; }
 
+a {
+  color: #f8f8f8 !important; }
+
 p {
   font-size: 19px;
   font-family: "Nunito", sans-serif; }
@@ -49,7 +52,8 @@ p {
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
-  min-height: 600px; }
+  min-height: 600px;
+  height: 35vw; }
 
 .header-contents {
   top: 20%;
@@ -90,7 +94,7 @@ p {
   padding: 30px 3rem 50px 3rem; }
   .partners h2 {
     margin-top: 15px;
-    color: #546771; }
+    color: #637984; }
 
 .partner-container {
   display: flex;
@@ -118,7 +122,7 @@ p {
     font-size: 22px; }
 
 .circle {
-  background: #546771;
+  background: #637984;
   border-radius: 50%;
   color: #fff;
   height: 0;
@@ -126,13 +130,11 @@ p {
   width: 350px; }
 
 .circle-text {
-  float: left;
-  line-height: 1;
-  margin-top: -5.5rem;
-  padding-top: 50%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 22%;
+  padding: 30px; }
 
 .circle-container {
   display: flex;
@@ -148,9 +150,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #546771;
+  background-color: #637984;
   color: #f8f8f8;
   padding: 40px 0; }
+  .footer-container a {
+    margin-bottom: 20px; }
   .footer-container .footer-header {
     width: 100%;
     text-align: center;
@@ -172,7 +176,7 @@ p {
   justify-content: space-between;
   background-color: #161d21;
   color: #f8f8f8;
-  padding: 72px 3rem; }
+  padding: 72px 10%; }
   .production-container h3 {
     color: #6ea4c8; }
   .production-container .production-shows {
@@ -200,6 +204,8 @@ p {
         padding: 20px 10px 50px 40px; }
   .production-container .production-story {
     width: 49%; }
+    .production-container .production-story p a {
+      color: #6ea4c8 !important; }
     .production-container .production-story table {
       margin-top: 70px;
       width: 100%;
@@ -251,7 +257,7 @@ p {
       margin-bottom: 32px; }
 
 .muted-text {
-  color: #546771;
+  color: #637984 !important;
   font-size: 20px;
   font-family: "Nunito", sans-serif;
   font-style: italic; }
