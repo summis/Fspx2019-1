@@ -9,15 +9,15 @@ $lighter-grey: #404e56;
 $lightest-grey: #637984;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-$font-sans-serif: 'Nunito', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+$font-sans-serif: "Nunito", sans-serif;
 
 // Downloaded from http://fontsforweb.com
 @font-face {
-  font-family: 'BRLNSR';
-  src: url('./../fonts/BRLNSR.eot');
-  src: local('BRLNSR'), url('./../fonts/BRLNSR.woff') format('woff'),
-    url('./../fonts/BRLNSR.ttf') format('truetype');
+  font-family: "BRLNSR";
+  src: url("./../fonts/BRLNSR.eot");
+  src: local("BRLNSR"), url("./../fonts/BRLNSR.woff") format("woff"),
+    url("./../fonts/BRLNSR.ttf") format("truetype");
 }
 $font-header: BRLNSR;
 
@@ -68,25 +68,18 @@ p {
   min-height: 600px;
   margin: 0px;
   padding: 0px;
-  background-image: url('../img/efterrättisulkeiset.jpg');
+  background-image: url("../img/trailer_header_bg.jpg");
   // filter: brightness(50%);
   height: 35vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  box-shadow: inset 0 -1px 5px 1px #1c2125;
 }
-// .header-background-image::before {
-//   content: "";
-//   position: absolute;
-//   height: 35vw;
-//   top: 0; left: 0;
-//   width: 100%; height: 100%;
-//   background-image: url('../img/efterrättisulkeiset.jpg');
-//   filter: brightness(50%);
-// }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.35);
   position: absolute;
   width: 100%;
   min-height: 600px;
@@ -122,14 +115,14 @@ p {
 }
 
 .button-solid {
-  color: $grey;
+  color: $grey !important;
   text-transform: uppercase;
   padding: 18px 33px;
   margin: 20px;
   background-color: $lighter-blue;
 
   &:hover {
-    color: $grey;
+    color: $grey !important;
     text-decoration: none;
     background-color: $light-blue;
   }
@@ -165,11 +158,13 @@ p {
 
 .middle-image {
   // Path relative to css-file
-  background-image: url('../img/heitästrobovoltti.jpg');
+  background-image: url("../img/subheader_bg.jpg");
   height: 35vw;
+  max-height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset 0 1px 5px 1px #1c2125, inset 0 -1px 5px 1px #1c2125;
 }
 
 .lafkat {
@@ -191,6 +186,7 @@ p {
   height: 0;
   padding-bottom: 350px;
   width: 350px;
+  box-shadow: 0 1px 5px 3px #1d2327;
 }
 
 .circle-text {
@@ -332,7 +328,7 @@ p {
           .buy-button {
             background-color: $light-blue;
             padding: 10px;
-            color: $grey;
+            color: $grey !important;
             text-transform: uppercase;
             font-size: 14px;
 
@@ -443,6 +439,11 @@ p {
   margin-right: 5px;
 }
 
+.footer-text {
+  color: #9eb8c5;
+  line-height: 30px;
+}
+
 .some-link {
   color: $white;
 
@@ -540,6 +541,22 @@ a.anchor {
 }
 
 @media screen and (max-width: 600px) {
+  .production-shows {
+    table {
+      tr {
+        td:first-child {
+          font-size: 16px !important;
+          .icon {
+            margin-left: 0 !important;
+            width: 16px !important;
+          }
+        }
+      }
+    }
+  }
+  .header-background-image {
+    background-image: url("../img/trailer_header_bg_mobile.jpg");
+  }
   .tickets-table {
     font-size: 16px !important;
     .weekday-td {

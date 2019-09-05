@@ -1,7 +1,6 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 @font-face {
-  font-family: 'BRLNSR';
+  font-family: "BRLNSR";
   src: url("./../fonts/BRLNSR.eot");
   src: local("BRLNSR"), url("./../fonts/BRLNSR.woff") format("woff"), url("./../fonts/BRLNSR.ttf") format("truetype"); }
 
@@ -42,14 +41,15 @@ p {
   min-height: 600px;
   margin: 0px;
   padding: 0px;
-  background-image: url("../img/efterrättisulkeiset.jpg");
+  background-image: url("../img/trailer_header_bg.jpg");
   height: 35vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: inset 0 -1px 5px 1px #1c2125; }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.35);
   position: absolute;
   width: 100%;
   min-height: 600px;
@@ -78,13 +78,13 @@ p {
     border: 3px solid #6ea4c8; }
 
 .button-solid {
-  color: #161d21;
+  color: #161d21 !important;
   text-transform: uppercase;
   padding: 18px 33px;
   margin: 20px;
   background-color: #75c8ff; }
   .button-solid:hover {
-    color: #161d21;
+    color: #161d21 !important;
     text-decoration: none;
     background-color: #6ea4c8; }
 
@@ -110,11 +110,13 @@ p {
   display: inline-block; }
 
 .middle-image {
-  background-image: url("../img/heitästrobovoltti.jpg");
+  background-image: url("../img/subheader_bg.jpg");
   height: 35vw;
+  max-height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: inset 0 1px 5px 1px #1c2125, inset 0 -1px 5px 1px #1c2125; }
 
 .lafkat {
   text-align: left; }
@@ -131,7 +133,8 @@ p {
   color: #fff;
   height: 0;
   padding-bottom: 350px;
-  width: 350px; }
+  width: 350px;
+  box-shadow: 0 1px 5px 3px #1d2327; }
 
 .circle-text {
   text-align: center;
@@ -227,7 +230,7 @@ p {
         .production-container .production-story table tr td .buy-button {
           background-color: #6ea4c8;
           padding: 10px;
-          color: #161d21;
+          color: #161d21 !important;
           text-transform: uppercase;
           font-size: 14px; }
           .production-container .production-story table tr td .buy-button:hover {
@@ -310,6 +313,10 @@ p {
   margin-top: -3px;
   margin-right: 5px; }
 
+.footer-text {
+  color: #9eb8c5;
+  line-height: 30px; }
+
 .some-link {
   color: #f8f8f8; }
   .some-link:hover {
@@ -368,6 +375,13 @@ a.anchor {
       font-size: 16px; } }
 
 @media screen and (max-width: 600px) {
+  .production-shows table tr td:first-child {
+    font-size: 16px !important; }
+    .production-shows table tr td:first-child .icon {
+      margin-left: 0 !important;
+      width: 16px !important; }
+  .header-background-image {
+    background-image: url("../img/trailer_header_bg_mobile.jpg"); }
   .tickets-table {
     font-size: 16px !important; }
     .tickets-table .weekday-td {
