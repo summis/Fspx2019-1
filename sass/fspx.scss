@@ -64,6 +64,16 @@ p {
   font-family: $font-sans-serif;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.flag {
+  width: 20px;
+  margin-top: -2px;
+  margin-left: 2px;
+}
+
 .header-background-image {
   min-height: 600px;
   margin: 0px;
