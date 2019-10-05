@@ -244,6 +244,10 @@ p {
           .production-container .production-story table tr td .buy-button:hover {
             text-decoration: none;
             background-color: #8bc2e6; }
+        .production-container .production-story table tr td .sold-out-text {
+          text-transform: uppercase;
+          font-size: 15px;
+          padding: 10px; }
       .production-container .production-story table tr td:first-child {
         text-align: left;
         padding-left: 5px; }

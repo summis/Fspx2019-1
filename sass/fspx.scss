@@ -347,6 +347,12 @@ p {
               background-color: #8bc2e6;
             }
           }
+
+          .sold-out-text {
+            text-transform: uppercase;
+            font-size: 15px;
+            padding: 10px;
+          }
         }
 
         td:first-child {
