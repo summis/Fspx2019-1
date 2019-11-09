@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function() {
-  $('.english').hide();
+  $('.finnish').hide();
 });
 
 var startY = $('.navbar').height() * 2;
