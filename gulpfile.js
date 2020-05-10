@@ -3,23 +3,23 @@ var bs = require('browser-sync').create();
 var sass = require('gulp-sass');
 
 const css = () => {
-    return gulp.src('sass/*.scss')
+    return gulp.src('index/sass/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('index/css'))
         .pipe(bs.stream());
 }
 
 const browserSync = () => {
     return bs.init({
         server: {
-            baseDir: './'
+            baseDir: './index/'
         }
     });
 }
 
 const watchFiles = () => {
-    gulp.watch('sass/*.scss', css);
-    gulp.watch('*.html').on('change', bs.reload);
+    gulp.watch('index/sass/*.scss', css);
+    gulp.watch('index/*.html').on('change', bs.reload);
 }
 
 const watch = gulp.parallel(watchFiles, browserSync);
